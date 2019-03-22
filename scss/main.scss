@@ -138,7 +138,9 @@ main {
   align-items: center;
   margin-top: 1rem;
 
+
   div {
+    width: 50vh;
     font-size: 2rem;
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
@@ -146,11 +148,12 @@ main {
     @include easeOut;
 
     &:hover {
-      padding: 0.5rem 1.5rem;
+      //padding: 0.5rem 1.5rem;
+      padding: 1rem 2rem;
       background: $secondary-color;
       color: set-text-color($secondary-color);
       span {
-        color: set-text-color($secondary-color);
+        color: set-text-color($primary-color);
       }
     }
   }
