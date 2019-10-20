@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/dist//css/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/dist//css/main.css" />
+	<link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/dist//css/bootstrap.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	
+    <title>My Portfolio</title>
+</head>
+<body>
+		
+		<header>
+				<div class="menu-btn">
+
+					<div class="btn-line"></div>
+					<div class="btn-line"></div>
+					<div class="btn-line"></div>
+				</div>
+
+				<div id="panel"></div>				
+		
+				<nav class="menu">										
+					<ul class="menu-nav">
+						<li class="nav-item current">
+								<a href="index.html" class="nav-link">
+									Home
+								</a>
+						</li>
+						<li class="nav-item">
+								<a href="/node_modules/fullpage.js/dist/about.html" class="nav-link">
+									About Me
+								</a>
+						</li>
+						<li class="nav-item">
+								<a href="/node_modules/fullpage.js/dist/work.html" class="nav-link">
+									My Work
+								</a>
+						</li>
+						<li class="nav-item">
+								<a href="/node_modules/fullpage.js/dist/contact.html" class="nav-link">
+									How To Reach Me
+								</a>
+						</li>                
+					</ul>
+				</nav>
+			</header>
+        <div id="fullpage">
+
+                <div class="section active" id="index">
+
+					<div class="container-fluid">
+						
+						<h1 class="lg-heading animated bounceInLeft delay">Carl</h1>
+						<h1 class="lg-heading animated bounceInLeft delay">Smestad</h1>
+						
+
+					</div>
+
+				</div>
+
+                <div class="section" id="section1">
+					<h1 class="lg-heading animated bounceInLeft delay ">About Me</h1>
+				</div>
+
+				<div class="section" id="section2">
+					<h1 class="lg-heading">My Works</h1>
+				</div>
+
+				<div class="section" id="section3">
+					<h1 class="lg-heading">How To</h1>
+					<h1 class="lg-heading">Contact Me</h1>
+				</div>
+				
+			
+			</div>
+			<div class="sky-color"></div>
+
+    <script type="text/javascript" src="node_modules/fullpage.js/dist/js/fullpage.js"></script>
+	<script type="text/javascript">
+	
+        var myFullpage = new fullpage('#fullpage', {
+			licenseKey: null,
+	//Navigation
+	menu: '#menu',
+	lockAnchors: false,
+	anchors:['firstPage', 'secondPage'],
+	navigation: false,
+	navigationPosition: 'right',
+	navigationTooltips: ['firstSlide', 'secondSlide'],
+	showActiveTooltip: false,
+	slidesNavigation: false,
+	slidesNavPosition: 'bottom',
+
+	//Scrolling
+	css3: true,
+	scrollingSpeed: 700,
+	autoScrolling: true,
+	fitToSection: true,
+	fitToSectionDelay: 1000,
+	scrollBar: false,
+	easing: 'easeInOutCubic',
+	easingcss3: 'ease',
+	loopBottom: false,
+	loopTop: false,
+	loopHorizontal: true,
+	continuousVertical: false,
+	continuousHorizontal: false,
+	scrollHorizontally: false,
+	interlockedSlides: false,
+	dragAndMove: false,
+	offsetSections: false,
+	resetSliders: false,
+	fadingEffect: false,
+	normalScrollElements: '#element1, .element2',
+	scrollOverflow: false,
+	scrollOverflowReset: false,
+	scrollOverflowOptions: null,
+	touchSensitivity: 15,
+	normalScrollElementTouchThreshold: 5,
+	bigSectionsDestination: null,
+
+	//Accessibility
+	keyboardScrolling: true,
+	animateAnchor: true,
+	recordHistory: true,
+
+	//Design
+	controlArrows: true,
+	verticalCentered: true,
+	paddingTop: '3em',
+	paddingBottom: '10px',
+	fixedElements: '#header, .footer',
+	responsiveWidth: 0,
+	responsiveHeight: 0,
+	responsiveSlides: false,
+	parallax: false,
+	parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+	//Custom selectors
+	sectionSelector: '.section',
+	slideSelector: '.slide',
+
+	lazyLoading: true,
+
+	//events
+	onLeave: function(origin, destination, direction){},
+	afterLoad: function(origin, destination, direction){},
+	afterRender: function(){},
+	afterResize: function(width, height){},
+	afterResponsive: function(isResponsive){},
+	afterSlideLoad: function(section, origin, destination, direction){},
+	onSlideLeave: function(section, origin, destination, direction){}
+});
+	</script>
+	<script src="node_modules/fullpage.js/dist/js/main.js"></script>
+
+
+	<script>
+	function myAwesomeCallback() {
+		alert('Parallax is ready to go now!');
+	}
+
+	// the onReady function is called as soon as Parallax knows what input method to use. This might take up to 1000ms (supportDelay * 2) after initialisation
+	var scene = document.getElementById("scene");
+	var parallax = new Parallax(scene, {
+		onReady: myAwesomeCallback
+	});
+
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="node_modules/fullpage.js/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

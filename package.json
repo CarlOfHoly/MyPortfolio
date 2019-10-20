@@ -1,14 +1,26 @@
 {
-  "name": "myportfolio",
+  "name": "myportfoliotesting",
   "version": "1.0.0",
   "description": "My Portfolio",
   "main": "index.js",
+  "dependencies": {
+    "fullpage.js": "^3.0.4",
+    "node-sass": "^4.11.0",
+    "parallax-js": "^3.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3"
+  },
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "test": "node-sasss -w scss/ -o /node_modules/fullpage.js/dist/css/main.css --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "n"
   },
   "author": "Carl Smestad",
   "license": "MIT",
-  "dependencies": {
-    "node-sass": "^4.11.0"
-  }
+  "keywords": [
+    "Portfolio"
+  ]
 }
