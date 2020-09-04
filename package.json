@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "fullpage.js": "^3.0.4",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "parallax-js": "^3.1.0"
   },
   "devDependencies": {
